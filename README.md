@@ -1,18 +1,22 @@
-##Plugin Name##
-Plugin Name: Candela Analytics
-Plugin URI: http://lumenlearning.com/
-Description: Adds Google Analyics tracking code to the theme header
-Version: 0.1
-Author URI: http://lumenlearning.com
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# Candela Analytics
 
-##Install Directions
+A plugin that adds Google Analytics tracking code to the theme header.
 
-Enable the plugin to have Google Analytics code added to the header of the theme.
+## Installation
 
-Then set a few configuration constants in your wp-config.php file.
+### Composer
 
-    define('LUMEN_GA_WEB_PROPERTY_ID', 'UA-XXXX-Y');
-    define('LUMEN_GA_COOKIE_DOMAIN', 'auto');
+Coming soon ...
 
-For testing use cookie domain, `none`.
+### Manually
+
+1. Download or clone Candela Analytics into your wordpress multisite plugins directory: `/path/to/wordpress/wp-content/plugins`
+1. Log in to your Wordpress multisite instance and navigate to `Network Admin > Plugins` and activate the Candela Analytics plugin
+1. Then set a few configuration constants in your wp-config.php file:
+
+    ```
+    define('CANDELA_ANALYTICS_WEB_PROPERTY_ID', 'UA-XXXX-Y');
+    define('CANDELA_ANALYTICS_COOKIE_DOMAIN', 'auto');
+    ```
+
+*For testing use cookie domain, `none`.*
